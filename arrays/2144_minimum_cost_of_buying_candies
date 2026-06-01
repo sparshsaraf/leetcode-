@@ -1,0 +1,22 @@
+"""
+free candy - ( fc <= c1 and c2)
+given list 
+select two max candies 
+skip every 3rd index 
+and then return sum of all three candies 
+
+"""
+
+class Solution:
+    def minimumCost(self, cost: List[int]) -> int:
+        cost = sorted(cost, reverse = True)
+        purchase = []
+        for i, val in enumerate(cost):
+            if i % 3 == 2:
+                pass 
+            else:
+                purchase.append(val)
+        return sum(purchase)
+
+        
+        
