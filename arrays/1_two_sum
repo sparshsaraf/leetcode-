@@ -1,5 +1,4 @@
 from typing import List 
-
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         store = {}
@@ -10,3 +9,7 @@ class Solution:
                 store[nums[i]] = i
 
             
+        """theres  also the brute force method which is O(n) when you are using two loops 
+        to iterate and compare, better solution being here is using hashmap data structure 
+        
+        """
